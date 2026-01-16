@@ -1,0 +1,83 @@
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: saddlebrown; */
+  padding: 20px 40px 0;
+
+}
+
+.header-left {
+  padding-left: 200px;
+}
+
+.header-left-text {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* 右侧导航 */
+.header-right {
+  margin-right: 120px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.header-left-text,
+.nav li {
+  transform: translateY(-1px);
+  transition: transform 0.3s;
+  /* 悬停动画 */
+  cursor: pointer;
+}
+
+.nav li:hover {
+  transform: scale(1.2);
+  /* 悬停放大 */
+}
+
+.nav a {
+  color: white;
+
+}
+
+/* 分隔符 */
+.divider {
+  margin: 0 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Comfortaa", sans-serif;
+  cursor: default;
+}
+
+.top {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: saddlebrown; */
+  padding: 20px 40px 0;
+
+}
+
+.top-text {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 15%;
+  padding-top: 80px;
+  color: white;
+}
