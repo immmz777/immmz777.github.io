@@ -1,26 +1,45 @@
+/* ---------- 全局 ---------- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Comfortaa", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Header ---------- */
 .header {
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: saddlebrown; */
   padding: 20px 40px 0;
-
 }
 
 .header-left {
   padding-left: 200px;
 }
 
-.header-left-text {
+.header-left-text a {
   color: white;
   font-size: 25px;
   font-weight: bold;
-  font-family: "Comfortaa", sans-serif;
+  text-decoration: none;
 }
 
-/* 右侧导航 */
+.header-left-text,
+.nav li {
+  transform: translateY(-1px);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
 .header-right {
   margin-right: 120px;
 }
@@ -28,120 +47,92 @@
 .nav {
   display: flex;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav li {
   margin: 0 20px;
-  color: white;
   font-size: 20px;
-  font-family: "Comfortaa", sans-serif;
-}
-
-.header-left-text,
-.nav li {
-  transform: translateY(-1px);
-  transition: transform 0.3s;
-  /* 悬停动画 */
-  cursor: pointer;
 }
 
 .nav li:hover {
   transform: scale(1.2);
-  /* 悬停放大 */
 }
 
 .nav a {
   color: white;
-
+  text-decoration: none;
 }
 
 /* 分隔符 */
 .divider {
   margin: 0 20px;
-  color: white;
   font-size: 20px;
-  font-family: "Comfortaa", sans-serif;
   cursor: default;
 }
 
-.top {
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: saddlebrown; */
-  padding: 20px 40px 0;
+/* ---------- Main Content ---------- */
+.page-content {
+  flex: 1;
+  /* 让内容撑开，footer贴底 */
+}
 
+.top {
+  padding-top: 80px;
+  padding-left: 15%;
 }
 
 .top-text {
-  font-family: "Comfortaa", sans-serif;
   font-size: 40px;
   font-weight: bold;
-  padding-left: 15%;
-  padding-top: 80px;
-  color: white;
+  margin: 0 0 40px 0;
 }
 
-/* Photo Wall 容器 */
+/* ---------- Photo Wall ---------- */
 .photo-wall {
   width: 90%;
   max-width: 1100px;
-  padding-top: 900px;
-  font-family: "Comfortaa", sans-serif;
+  margin-left: 60px;
+  padding-top: 60px;
   display: flex;
   justify-content: center;
-  /* 水平居中 */
-  margin-top: 120px;
-  transform: translateX(-260px);
-
 }
 
-/* 网格布局 */
 .photo-grid {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 22px; */
   display: flex;
+  flex-wrap: wrap;
   gap: 35px;
   overflow-x: auto;
   padding-bottom: 10px;
-  flex-wrap: wrap;
-
 }
 
-/* 单张照片卡片 */
+.photo-grid::-webkit-scrollbar {
+  display: none;
+}
+
 .photo-item {
   position: relative;
-  overflow: hidden;
+  flex: 0 0 240px;
+  aspect-ratio: 4 / 5;
   border-radius: 16px;
-
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-
-  aspect-ratio: 4 / 5;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-
-  flex: 0 0 240px;
-
-
-
 }
 
-/* 图片 */
 .photo-item img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
-
   transition: transform 0.5s ease;
 }
 
-/* Hover 效果 */
 .photo-item:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
@@ -151,39 +142,12 @@
   transform: scale(1.08);
 }
 
-.photo-grid::-webkit-scrollbar {
-  display: none;
-}
-
+/* ---------- Footer ---------- */
 .footer {
   width: 100%;
-  padding-top: 10px;
-  /* 与上方内容拉开距离 */
-  padding: 220px;
-}
-
-.footer-content {
-  text-align: center;
-  font-size: 14px;
-  color: #aaa;
-  line-height: 1.8;
-}
-
-.footer-content a {
-  color: #aaa;
-}
-
-.footer-content a:hover {
-  color: #fff;
-}
-
-.footer {
-  width: 100%;
-  margin-top: 95px;
-  padding: 125px 0;
+  padding: 30px 0;
   background-color: #000;
   position: relative;
-  /* make back-button absolute positioning relative to footer */
 }
 
 .footer-content {
@@ -195,12 +159,14 @@
 
 .footer-content a {
   color: #aaa;
+  text-decoration: none;
 }
 
 .footer-content a:hover {
   color: #fff;
 }
 
+/* ---------- Back Button ---------- */
 .back-button {
   position: absolute;
   left: 15%;
@@ -213,22 +179,19 @@
   height: 36px;
   background: rgba(255, 255, 255, 0.06);
   color: white;
-  text-decoration: none;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  font-family: "Comfortaa", sans-serif;
   font-size: 15px;
   line-height: 1;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 
 .back-button svg {
   width: 14px;
   height: 14px;
-  display: block;
-  color: white;
   margin-left: 2px;
 }
 
@@ -240,27 +203,4 @@
 .back-button:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.18);
-}
-
-
-.footer {
-  width: 100%;
-  margin-top: 120px;
-  /* 与上方内容拉开距离 */
-  padding: 30px 0;
-}
-
-.footer-content {
-  text-align: center;
-  font-size: 14px;
-  color: #aaa;
-  line-height: 1.8;
-}
-
-.footer-content a {
-  color: #aaa;
-}
-
-.footer-content a:hover {
-  color: #fff;
 }
