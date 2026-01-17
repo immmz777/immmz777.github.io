@@ -283,39 +283,6 @@ body {
   color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 880px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
-  .projects {
-    grid-template-columns: 1fr;
-    gap: 18px;
-    width: 94%;
-  }
-
-  .project-card {
-    flex-direction: row;
-    min-height: auto;
-    padding: 12px;
-  }
-
-  .project-thumb {
-    width: 100px;
-  }
-
-  .project-info {
-    height: auto;
-  }
-
-  .page-title {
-    font-size: 28px;
-    margin-top: 48px;
-  }
-}
 
 /* Lower text position for 2nd and 3rd project cards (only paragraph text; button stays) */
 .projects .project-card:nth-child(1) .project-info p,
@@ -324,12 +291,4 @@ body {
 .projects .project-card:nth-child(4) .project-info p {
   transform: translateY(30px);
   display: block;
-}
-
-@media (max-width: 520px) {
-
-  .projects .project-card:nth-child(2) .project-info p,
-  .projects .project-card:nth-child(3) .project-info p {
-    transform: translateY(34px);
-  }
 }

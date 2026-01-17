@@ -204,3 +204,101 @@ body {
   background: rgba(255, 255, 255, 0.12);
   border-color: rgba(255, 255, 255, 0.18);
 }
+@media (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5%;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav li {
+    font-size: 14px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Myname-text {
+    font-size: 18px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 12px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* 小平板 / 横屏手机 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .top {
+    padding: 15px 5%;
+  }
+
+  .nav li {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Myname-text {
+    font-size: 20px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 14px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* iPad 横屏 / 中等屏幕 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top {
+    padding: 20px 5%;
+  }
+
+  .nav li {
+    font-size: 18px;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+
+  .Myname-text {
+    font-size: 22px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 16px;
+  }
+
+  .social-icons img {
+    width: 36px;
+    height: 36px;
+  }
+}

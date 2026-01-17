@@ -1,317 +1,5 @@
-/* iPhone 14 / 15 / Pro / Pro Max（竖屏） */
-@media (max-width: 480px) {
-  .top {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 16px;
-  }
-
-  .top-left {
-    padding-left: 0;
-  }
-
-  .top-right {
-    margin-right: 0;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .nav li {
-    margin: 6px 8px;
-    font-size: 15px;
-  }
-
-  .avatar {
-    width: 140px;
-    height: 140px;
-    top: 28%;
-  }
-
-  .Myname-text {
-    font-size: 22px;
-    margin-top: 10px;
-  }
-
-  .department-text {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-
-  .Self-description,
-  .Motto {
-    font-size: 13px;
-    padding: 0 16px;
-  }
-
-  .social-icons img {
-    width: 34px;
-    height: 34px;
-  }
-
-  .footer {
-    margin-top: 80px;
-  }
-
-  .content {
-    padding-top: 20px;
-  }
-
-  .footer {
-    padding-bottom: calc(20px + env(safe-area-inset-bottom));
-  }
-}
-
-/* iPhone Safe Area Support */
-@supports (padding: env(safe-area-inset-top)) {
-
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
-  }
-
-  .top {
-    padding-top: calc(20px + env(safe-area-inset-top));
-  }
-
-  .footer {
-    padding-bottom: calc(30px + env(safe-area-inset-bottom));
-  }
-}
-
-/* iPad 横屏 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .top {
-    padding: 20px 40px;
-  }
-
-  .top-left {
-    padding-left: 120px;
-  }
-
-  .top-right {
-    margin-right: 80px;
-  }
-
-  .avatar {
-    width: 220px;
-    height: 220px;
-    top: 32%;
-  }
-
-  .Myname-text {
-    font-size: 26px;
-    margin-top: 16px;
-  }
-
-  .department-text {
-    font-size: 17px;
-    margin-top: 10px;
-  }
-
-  .Self-description,
-  .Motto {
-    font-size: 16px;
-    margin-top: 12px;
-    padding: 0 40px;
-  }
-
-  .social-icons img {
-    width: 38px;
-    height: 38px;
-  }
-}
-
-/* @media (max-width: 480px) {
-  .top {
-    flex-direction: column;
-    padding: 10px 16px;
-  }
-
-  .nav li {
-    font-size: 15px;
-    margin: 6px 8px;
-  }
-
-  .avatar {
-    width: 140px;
-    height: 140px;
-    top: 28%;
-  }
-
-  .Myname-text {
-    font-size: 22px;
-  }
-
-  .department-text {
-    font-size: 14px;
-  }
-
-  .Self-description,
-  .Motto {
-    font-size: 13px;
-    padding: 0 16px;
-  }
-
-  .social-icons img {
-    width: 34px;
-    height: 34px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .top {
-    padding: 20px 30px;
-  }
-
-  .avatar {
-    width: 220px;
-    height: 220px;
-    top: 32%;
-  }
-
-  .Myname-text {
-    font-size: 26px;
-  }
-
-  .department-text {
-    font-size: 17px;
-  }
-
-  .Self-description,
-  .Motto {
-    font-size: 16px;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .top {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .top-left {
-    padding-left: 0;
-  }
-
-  .top-right {
-    margin-right: 0;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 8px;
-  }
-
-  .nav li {
-    margin: 6px 10px;
-    font-size: 16px;
-  }
-
-  .avatar {
-    width: 150px;
-    height: 150px;
-    top: 30%;
-  }
-
-  .Myname-text {
-    font-size: 22px;
-    margin-top: 10px;
-  }
-
-  .department-text {
-    font-size: 15px;
-    margin-top: 8px;
-  }
-
-  .Self-description,
-  .Motto {
-    font-size: 14px;
-    margin-top: 10px;
-    padding: 0 20px;
-  }
-
-  social-icons {
-    gap: 16px;
-    margin-top: 24px;
-  }
-
-  .social-icons img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .footer {
-    margin-top: 80px;
-    padding: 20px 0;
-  }
-
-  .footer-content {
-    font-size: 12px;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .top {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .top-left {
-    padding-left: 0;
-  }
-
-  .top-right {
-    margin-right: 0;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .avatar {
-    width: 160px;
-    height: 160px;
-    top: 30%;
-  }
-} */
-
-/* @media (max-width: 768px) {
-  .top {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 20px;
-  }
-
-  .top-left-text {
-    margin-bottom: 10px;
-  }
-
-  .nav li {
-    margin: 0 10px;
-    font-size: 16px;
-  }
-
-  .avatar {
-    width: 150px;
-    height: 150px;
-  }
-
-  .Myname-text {
-    font-size: 24px;
-  }
-
-  .department-text {
-    font-size: 16px;
-  }
-} */
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
 
 .top {
@@ -486,4 +174,101 @@ body{
   color: #fff;
 }
 
+@media (max-width: 480px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 5%;
+  }
 
+  .nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav li {
+    font-size: 14px;
+  }
+
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Myname-text {
+    font-size: 18px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 12px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* 小平板 / 横屏手机 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .top {
+    padding: 15px 5%;
+  }
+
+  .nav li {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Myname-text {
+    font-size: 20px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 14px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* iPad 横屏 / 中等屏幕 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .top {
+    padding: 20px 5%;
+  }
+
+  .nav li {
+    font-size: 18px;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+
+  .Myname-text {
+    font-size: 22px;
+  }
+
+  .department-text,
+  .Self-description,
+  .Motto {
+    font-size: 16px;
+  }
+
+  .social-icons img {
+    width: 36px;
+    height: 36px;
+  }
+}
